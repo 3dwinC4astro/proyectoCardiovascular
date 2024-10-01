@@ -1,0 +1,107 @@
+body{
+
+  display: flex;                /* Usar flexbox para el body */
+  justify-content: center;      /* Centra horizontalmente */
+  align-items: center;          /* Centra verticalmente */
+  height: 100%;               /* Ocupa el 100% de la altura de la ventana */
+  margin: 0; 
+  background: linear-gradient(to bottom, #3b82f6, #78b3fc);
+  flex-direction: column;
+}
+
+  
+.formulario {
+  background-color: white;
+  width: 370px;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los inputs */
+ 
+}
+
+.fc{
+ align-content: center;
+}
+
+.ff {
+  margin-left: auto;           /* Alinea el div.ff a la derecha */
+  padding: 10px;               /* Opcional: agrega espaciado interno */
+}
+
+
+
+.formulario input {
+  width: 100%;
+  padding: 10px; /* Aumenta el tamaño del input */
+  font-size: 16px; /* Aumenta el tamaño del texto */
+  box-sizing: border-box; /* Para asegurarte de que el padding no desborde el ancho */
+}
+
+.container {
+  display: flex;               /* Utiliza flexbox para el contenedor */
+  justify-content: space-between; /* Coloca los elementos en los extremos */
+  width: 100%;                /* Asegúrate de que el contenedor tenga el ancho completo */
+  padding: 20px;              /* Espaciado interno */
+  box-sizing: border-box;     /* Incluye el padding en el ancho total */
+}
+
+#imagen1 img{
+  width: 30px;                /* Ajusta el tamaño de las imágenes */
+  height: auto;               /* Mantiene la relación de aspecto */
+}
+#imagen2 img {
+  width: 40px;                /* Ajusta el tamaño de las imágenes */
+  height: auto;               /* Mantiene la relación de aspecto */
+  display: flex;              /* Usa flexbox para alinear la imagen y el texto */
+  align-items: center;        /* Alinea verticalmente la imagen y el texto */
+}
+
+.imagen-texto {
+  display: flex;              /* Permite que la imagen y el texto estén en línea */
+  align-items: center;        /* Alinea verticalmente el contenido */
+}
+
+.imagen-texto img {
+  margin-right: 10px;        /* Espacio entre la imagen y el texto */
+}
+
+.texto_blanco{
+  color: white;
+}
+
+#body_formulario input, 
+#body_formulario select {
+    margin-bottom: 9px; /* Agrega un margen inferior de 7px a cada input y al select */
+    width: 100%; /* Asegúrate de que los inputs y el select ocupen el ancho completo */
+    padding: 10px; /* Opcional: añade padding para mejorar la apariencia */
+    box-sizing: border-box; /* Asegúrate de que el padding no afecte el ancho total */
+}
+
+h3{
+  color: blue;
+  align-content: center;
+}
+
+.head_formulario{
+  display: flex;   
+  flex-direction: column;   
+  justify-content: center;      /* Centra horizontalmente */
+  align-items: center;          /* Centra verticalmente */
+}
+
+.food_formulario{
+  display: flex;   
+  flex-direction: column;   
+  justify-content: center;      /* Centra horizontalmente */
+  align-items: center;          /* Centra verticalmente */
+}
+
+button{
+  background-color: rgb(54, 54, 238);
+  color: white;
+  padding: 8px;
+  font-size: 16px; /* Aumenta el tamaño del texto */
+}
+
