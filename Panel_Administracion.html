@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="styles_panel.css"> <!-- Cambiado a styles_panel.css -->
+</head>
+<body>
+    <div class="container">
+        <h1>Panel de Administración</h1>
+        <nav>
+            <a href="#">Usuarios</a>
+            <a href="#">Permisos</a>
+        </nav>
+
+        <section class="active-users">
+            <h2>Usuarios Activos</h2>
+            <div class="user-card">
+                <img src="imagenes/hombre1.jpg" alt="Usuario 1">
+                <h3>Nombre: Juan Pérez</h3>
+                <p>Permiso: Edición</p>
+                <button class="btn">Editar Permisos</button>
+            </div>
+            <div class="user-card">
+                <img src="imagenes/Mujer1.jpg" alt="Usuario 2">
+                <h3>Nombre: María López</h3>
+                <p>Permiso: Administración</p>
+                <button class="btn">Editar Permisos</button>
+            </div>
+        </section>
+
+        <section class="assign-permissions">
+            <h2>Asignar Permiso a Usuario</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" placeholder="Nombre de usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="permission">Permiso:</label>
+                    <select id="permission" required>
+                        <option value="administracion">Administración</option>
+                        <option value="edicion">Edición</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Guardar Cambios</button>
+            </form>
+        </section>
+   
