@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riesgo Cardiovascular</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #ffffff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            color: #8698ff;
+        }
+        h2{
+            color: #8698ff;
+        }
+        .negro{
+            color: black;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #3f51b5;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5c6bc0;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #3f51b5;
+            background-color: #e8eaf6;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Riesgo Cardiovascular</h1>
+        <p class="negro">Realiza una autoevaluación de tu riesgo cardiovascular y recibe recomendaciones personalizadas para mejorar tu salud.</p>
+        <button>Comenzar</button>
+    </header>
+
+    <div class="container">
+        <h2>Datos Personales</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad">
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+
+            <h2>Hábitos y Estilo de Vida</h2>
+            <label>
+                <input type="checkbox" name="fumador"> Fumador
+            </label>
+            <label>
+                <input type="checkbox" name="actividad_fisica"> Actividad física regular
+            </label>
+            <label>
+                <input type="checkbox" name="dieta_saludable"> Dieta saludable
+            </label>
+
+            <h2>Antecedentes Médicos</h2>
+            <label>
+                <input type="checkbox" name="hipertension"> Hipertensión
+            </label>
+            <label>
+                <input type="checkbox" name="diabetes"> Diabetes
+            </label>
+            <label>
+                <input type="checkbox" name="enfermedad_cardiovascular"> Enfermedad cardiovascular
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="result">
+        <h2>Tu Riesgo Cardiovascular</h2>
+        <p>Tu riesgo cardiovascular es: <strong>alto</strong></p>
+        <h3>Recomendaciones Personalizadas</h3>
+        <ul>
+            <li>Realiza actividad física regular</li>
+            <li>Mantén una dieta saludable</li>
+            <li>Deja de fumar</li>
+        </ul>
+    </div>
+</body>
+</html>
