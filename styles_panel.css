@@ -54,7 +54,7 @@ input {
 }
 
 .btn {
-    background-color: #09ae1c; 
+    background-color: #3b82f6; 
     color: #fff; 
     border: none; 
     cursor: pointer; 
@@ -62,7 +62,7 @@ input {
 }
 
 .btn:hover {
-    background-color: #058e20; 
+    background-color: #3b82f6; 
 }
 
 nav {
